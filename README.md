@@ -1,8 +1,6 @@
 # [Image Map Creator](https://n-peugnet.github.io/image-map-creator/)
 
-<!--
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fn-peugnet%2Fimage-map-creator.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fn-peugnet%2Fimage-map-creator?ref=badge_shield)
---->
+[![build][build-svg]][build-url]
 
 This is a simple map creator tool made with the p5.js library. I want it
 to be easy to use for both the end user and the developper. This work is
@@ -64,20 +62,22 @@ _the others are the ones I plan to add in the future._
 
 There are multiple ways to get image-map-creator:
 
-- Download the bundle from [the latest release](https://github.com/n-peugnet/image-map-creator/releases/latest).
-- Compile the bundle from sources (see [development informations](#development)).
+- Download the bundles from [the latest release](https://github.com/n-peugnet/image-map-creator/releases/latest).
+- Compile the bundles from sources (see [development informations](#development)).
 - Get the package from npm:
   ```
   npm install image-map-creator
   ```
   ```javascript
   // script.js
+  import "image-map-creator/dist/p5.image-map-creator.css";
   import { imageMapCreator } from "image-map-creator";
   ```
 
-Import `p5.js`, `p5.dom.js` and the javascript bundle from `/dist` :
+Import `p5.js`, `p5.dom.js` and the css & javascript bundles from `/dist` :
 
 ```html
+<link rel="stylesheet" href="dist/image-map-creator.bundle.css" />
 <script src="dist/image-map-creator.bundle.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
@@ -149,7 +149,5 @@ your local machine for development and testing purposes.
 See also the list of [contributors](https://github.com/n-peugnet/image-map-creator/contributors)
 who participated in this project.
 
-<!--
-## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fn-peugnet%2Fimage-map-creator.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fn-peugnet%2Fimage-map-creator?ref=badge_large)
--->
+[build-svg]: https://github.com/n-peugnet/image-map-creator/actions/workflows/build.yml/badge.svg
+[build-url]: https://github.com/n-peugnet/image-map-creator/actions/workflows/build.yml
